@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<overlay xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 更换颜色 -->
+    <item target="string/app_name" value="Target2"/>
+    <item target="color/purple_200" value="#000000"/>
+    <item target="color/purple_500" value="#000000"/>
+    <item target="color/purple_700" value="#000000"/>
+    <item target="color/teal_200" value="#000000"/>
+    <item target="color/teal_700" value="#000000"/>
+    <item target="color/black" value="#000000"/>
+    <item target="color/white" value="#000000"/>
+</overlay>

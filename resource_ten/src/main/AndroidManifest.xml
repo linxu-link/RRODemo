@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.target.overlay.ten">
+
+    <overlay
+        android:targetName="ThemeResources"
+        android:targetPackage="com.android.target" />
+
+    <application android:hasCode="false"/>
+
+</manifest>

@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.android.target'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.android.target.overlay.ten"
+        minSdk 29
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        sign {
+            storeFile file('system.keystore')
+            storePassword '123456'
+            keyAlias 'cardemo'
+            keyPassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+//            signingConfig signingConfigs.sign
+        }
+        debug {
+            minifyEnabled false
+//            signingConfig signingConfigs.sign
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def rootName = rootProject.name
+            outputFileName = "rro_ten.apk"
+        }
+    }
+}

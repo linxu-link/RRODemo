@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <overlayable name="ThemeResources">
+        <policy type="public">
+            <item type="color" name="purple_200" />
+            <item type="color" name="purple_500" />
+        </policy>
+    </overlayable>
+</resources>
